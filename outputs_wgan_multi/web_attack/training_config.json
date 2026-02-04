@@ -1,0 +1,25 @@
+{
+  "class_name": "Web Attack",
+  "original_samples": 2180,
+  "augmented_samples": 43600,
+  "config": {
+    "batch_size": 16,
+    "epochs": 30000,
+    "n_critic": 2,
+    "lambda_gp": 20.0,
+    "generator_layers": [
+      64,
+      128,
+      64
+    ],
+    "critic_layers": [
+      128,
+      64,
+      32
+    ],
+    "learning_rate": 2e-05,
+    "oversample_factor": 20,
+    "noise_std": 0.03
+  },
+  "timestamp": "2026-01-13T21:10:18.814472"
+}

@@ -1,0 +1,27 @@
+# CiberIA - Requirements
+# Python >= 3.8
+
+# Core ML/DL
+tensorflow>=2.10.0
+numpy>=1.21.0
+pandas>=1.4.0
+polars>=0.15.0
+scikit-learn>=1.0.0
+
+# Gradient Boosting
+lightgbm>=3.3.0
+xgboost>=1.6.0
+
+# Imbalanced Learning (for comparison experiments)
+imbalanced-learn>=0.9.0
+
+# Visualization
+matplotlib>=3.5.0
+seaborn>=0.11.0
+
+# Statistics
+scipy>=1.7.0
+
+# Utilities
+tqdm>=4.64.0
+pickle5>=0.0.11; python_version < "3.8"

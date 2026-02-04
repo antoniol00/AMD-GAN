@@ -1,0 +1,25 @@
+{
+  "class_name": "Brute Force",
+  "original_samples": 13835,
+  "augmented_samples": 138350,
+  "config": {
+    "batch_size": 32,
+    "epochs": 25000,
+    "n_critic": 3,
+    "lambda_gp": 15.0,
+    "generator_layers": [
+      128,
+      256,
+      128
+    ],
+    "critic_layers": [
+      256,
+      128,
+      64
+    ],
+    "learning_rate": 5e-05,
+    "oversample_factor": 10,
+    "noise_std": 0.02
+  },
+  "timestamp": "2026-01-13T20:12:16.348472"
+}

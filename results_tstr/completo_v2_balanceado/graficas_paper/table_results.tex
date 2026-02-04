@@ -1,0 +1,29 @@
+\begin{table}[htbp]
+\centering
+\caption{Performance comparison of TSTR vs TRTR across different models and classification tasks.}
+\label{tab:results}
+\small
+\begin{tabular}{llcccccc}
+\toprule
+\textbf{Task} & \textbf{Model} & \multicolumn{2}{c}{\textbf{TSTR}} & \multicolumn{2}{c}{\textbf{TRTR}} & \multicolumn{2}{c}{\textbf{Gap}} \\
+\cmidrule(lr){3-4} \cmidrule(lr){5-6} \cmidrule(lr){7-8}
+& & Acc. & $F_1$-M & Acc. & $F_1$-M & $\Delta$Acc & $\Delta F_1$ \\
+\midrule
+Multiclass & Dum & 0.803 & 0.127 & 0.803 & 0.127 & +0.000 & +0.000 \\
+ & LR & 0.950 & 0.526 & 0.949 & 0.703 & +0.001 & -0.178 \\
+ & RF & 0.996 & 0.891 & 0.999 & 0.966 & -0.003 & -0.075 \\
+ & KNN & 0.975 & 0.873 & 0.996 & 0.918 & -0.021 & -0.045 \\
+ & LGBM & 0.751 & 0.530 & 1.000 & 0.971 & -0.248 & -0.441 \\
+ & XGB & 0.996 & 0.874 & 1.000 & 0.972 & -0.003 & -0.098 \\
+ & Vote & 0.983 & 0.832 & 0.999 & 0.966 & -0.016 & -0.134 \\
+\midrule
+Binary & Dum & 0.803 & 0.445 & 0.197 & 0.165 & +0.605 & +0.280 \\
+ & LR & 0.998 & 0.996 & 0.978 & 0.966 & +0.020 & +0.030 \\
+ & RF & 0.998 & 0.997 & 1.000 & 0.999 & -0.001 & -0.002 \\
+ & KNN & 0.999 & 0.998 & 0.998 & 0.997 & +0.001 & +0.001 \\
+ & LGBM & 0.971 & 0.956 & 1.000 & 0.999 & -0.029 & -0.043 \\
+ & XGB & 0.997 & 0.995 & 1.000 & 0.999 & -0.003 & -0.004 \\
+ & Vote & 0.999 & 0.998 & 1.000 & 0.999 & -0.001 & -0.001 \\
+\bottomrule
+\end{tabular}
+\end{table}
